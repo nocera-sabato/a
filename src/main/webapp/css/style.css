@@ -1,0 +1,831 @@
+@charset "UTF-8";
+
+
+
+@media screen and (max-width: 999px) {
+	
+	body {
+		background-color: #000c4b;
+		color: #ffffff;
+		text-align: center;
+		width: 98%;
+		display: block;
+	}
+	#acc_manage{
+	
+    width: fit-content;
+	}
+	.deleteX{
+	    color: red;
+}
+	.container{
+	border: 2px solid white;
+  border-radius: 12px;
+  padding: 5px;
+  margin:1%;
+	}
+	input{
+	text-align: center;
+	}
+	table, thead, tbody, th, td, tr { /*aggiustamento tabella */
+		display: block; 
+	}
+	tbody tr.head,.NoMob{ 
+		display: none;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		
+	}
+	td.Contenuto,td.AccManage,td.GameManage{
+	padding-left: 50%; 
+	}
+	
+		td.Contenuto::before,td.AccManage::before,td.GameManage::before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	td.Contenuto:nth-of-type(1):before { content: "Nome"; }
+	td.Contenuto:nth-of-type(2):before { content: "Quantita"; }
+	td.Contenuto:nth-of-type(3):before { content: "Unita disponibili"; }
+	td.Contenuto:nth-of-type(4):before { content: "Prezzo unita"; }
+	td.Contenuto:nth-of-type(5):before { content: "Totale"; }
+	td.Contenuto:nth-of-type(6):before { content: "Iva"; }
+	td.Contenuto:nth-of-type(7):before { content: "Rimuovi"; }
+	
+	td.AccManage:nth-of-type(1):before { content: "Login"; }
+	td.AccManage:nth-of-type(2):before { content: "Password"; }
+	td.AccManage:nth-of-type(3):before { content: "Nome"; }
+	td.AccManage:nth-of-type(4):before { content: "Cognome"; }
+	td.AccManage:nth-of-type(5):before { content: "Saldo"; }
+	td.AccManage:nth-of-type(6):before { content: "Ruolo"; }
+	
+	
+	td.GameManage:nth-of-type(1):before { content: "Titolo"; }
+	td.GameManage:nth-of-type(2):before { content: "Quantita"; }
+	td.GameManage:nth-of-type(3):before { content: "Data Uscita"; }
+	td.GameManage:nth-of-type(4):before { content: "Aggiunto"; }
+	td.GameManage:nth-of-type(5):before { content: "Prezzo"; }
+	td.GameManage:nth-of-type(6):before { content: "Iva"; }
+	td.GameManage:nth-of-type(7):before { content: "Descrizione"; }
+	
+	
+	table{
+	width:100%;
+	margin-top: 1%;
+}
+	.foto {
+		width: 50%;
+		margin: 1%;
+		height:20rem;
+		float:left;
+	}
+	.miniFoto {
+		width: 140px;
+	}
+	.fotoFooterPrefCons {
+		width: 100px;
+		height: 150px;
+	}
+	a {
+		text-decoration: none;
+		font-size: 1.2em;
+    	color: white;
+	}
+	.descriptionGameInfo{
+		    margin-top: 1em;
+    overflow: hidden;
+    height: 8em;
+	}
+	div#login a , nav#navnav a{
+		text-decoration: none;
+		color: #ff0000;
+		font-size: 1.5em;
+	}
+	#headerL {
+		width: 98%;
+		/* margin-left: 10%;
+		position: relative;
+		height: 200px; */
+	}
+	#textLogo {
+		position: relative;
+		
+		font-size: 2em;
+		font-family: Cursive;
+		color: #ffff66;
+	}
+	#logo {
+		position: relative;
+		
+		height: 30%;
+		width: 30%;
+	}
+	#ricerca {
+		position: relative;
+		
+		width: 400px;
+	}
+	#inputSearch {
+		visibility: hidden;
+		width: 65%;
+	}
+	#BSearch {
+	visibility: hidden;
+		position: relative;
+		width: 100px;
+		height: 34px;
+		font-size: 1.2em;
+		background-color: #000c4b;
+		color: #ffff66;
+		border: 1px solid #ffff66;
+		border-radius: 30px;
+		margin-left: 5px;
+	}
+	#login {
+		position: relative;
+	}
+	span.divBlock {
+		position: relative;
+	}
+	
+	#pf1, #pf2, #pf3 {
+		position: absolute;
+	}
+	#pf1 {
+		left: 60px;
+	}
+	#pf2 {
+		left: 225px;
+	}
+	#pf3 {
+		left: 400px;
+	}
+	
+	#a1,#a2,#a3,#a4,#a5,#a6{position: absolute;}
+	
+	#a1{top: 270px;left: 65px;}
+	#a2{top: 310px;left: 65px;}
+	#a3{top: 270px;left: 230px;}
+	#a4{top: 310px;left: 230px;}
+	#a5{top: 270px;left: 400px;}
+	#a6{top: 310px;left: 400px;}
+	
+	#f1, #f2, #f3 {
+		position: absolute;
+	}
+	#f1 {
+		left: 60px;
+	}
+	#f2 {
+		left: 225px;
+	}
+	#f3 {
+		left: 400px;
+	}
+	
+	#b1,#b2,#b3,#b4,#b5,#b6{position: absolute;}
+	
+	#b1{top: 270px;left: 65px;}
+	#b2{top: 310px;left: 65px;}
+	#b3{top: 270px;left: 230px;}
+	#b4{top: 310px;left: 230px;}
+	#b5{top: 270px;left: 400px;}
+	#b6{top: 310px;left: 400px;}
+	
+	.LR { /* LR la parte di login/ registrazione/ carrello */
+		padding: 10px;
+		width: 150px;
+		font-size: 20px;
+	}
+	/* .D per dopo, .C carrello pref, .LD dislike, .L like */
+	.D, .C, .LD, .L, .LR {
+		background-color: #000c4b;
+		border: 1px solid white;
+		color: #ffff66;
+		border-radius: 30px;
+		border: 1px solid #ffff66;
+	}
+	.D, .C, .LD, .L {
+		padding: 10px;
+		width: 90px;
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	.L:hover {
+		background-color: green;
+		color: white;
+	}
+	.LD:hover {
+		background-color: red;
+		color: white;
+	}
+	.C:hover {
+		background-color: #947141;
+		color: white;
+	}
+	.D:hover {
+		background-color: #800040;
+		color: white;
+	}
+	div#navmenuaside {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#AsidePreferiti {
+		position: absolute;
+		width: 550px;
+		height: 350px; 
+		top: 1120px;
+		background-color: #001998;
+		border-radius: 50px;
+		left: 10px;
+	}
+	#AsideConsigliati {
+		position: absolute;
+		width: 550px;
+		height: 350px; 
+		top: 1500px;
+		background-color: #001998;
+		border-radius: 50px;
+		left: 10px;
+	}
+	#navnav {
+		position: absolute;
+		left: 20%;
+		top: 135px;
+		min-width: 400px;
+	}
+	ul.nav li {
+		display: inline;
+		float: left;
+	}
+	ul.nav li a {
+		display: block;
+		text-align: center;
+		padding: 10px;
+		margin: 1px;
+		max-width: 200px;
+	}
+	ul#undernav {
+		display: none;
+	}
+	#Principale {
+		position: absolute;
+		width: 500px;
+		left: 10px;
+		top: 205px;
+	}
+	section article{
+		font-family: arial;
+		
+		color: #77e052;
+		
+		position: relative;
+		display: block;
+		width: 500px;
+		height:270px;
+	}
+	article a{
+	color: #77e052;}
+	.title{
+		font-weight: 700;
+    font-family: Cursive;
+    font-size: 30px;
+    height: 3em;
+    overflow: hidden
+	}
+	.cart{
+		    width: 20%;
+    margin: 2%;
+    position: relative;
+	}
+	.infoGioco{
+		position: relative;
+		top: -100px;
+		left: 340px;
+		text-align: left;
+		width: 200px;
+	}
+	.descriptionGame{
+		position: relative;
+		left: 5%;
+		text-align: left;
+		overflow: hidden;
+	}
+	
+	#offerte, article, footer, aside {
+		padding-top: 10px;
+		font-size: 1.5em;
+	}
+	#foot{
+		border: 3px dotted #ffff66;
+		border-radius: 30px;
+		padding: 20px;
+		font-size: 20px;
+	}
+}
+
+/* @media screen and (min-width:1000px) and (max-width: 1299px) {
+	body {
+		background-color: #000c4b;
+		color: #ffffff;
+		text-align: center;
+		width: 1000px;
+		height: 110%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	input#username{		tasto nella pagina di login
+		margin:1%;
+	}
+	input#password{		tasto nella pagina di login
+		margin:1%;
+	}
+	table#acc{
+	
+	width:40%;
+	margin: auto;
+	margin-top:1%;
+}
+	table{
+	
+	margin-top:1%;
+}
+	.foto {
+		width: 350px;
+	}
+	.fotoFooterPrefCons {
+		width: 200px;
+		height: 300px;
+	}
+	a {
+		text-decoration: none;
+		color: #cccccc;
+		font-size: 1.5em;
+	}
+	#headerL {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		height: 200px;
+	}
+	#textLogo {
+		position: absolute;
+		top: 25px;
+		left: 370px;
+		font-size: 2em;
+		font-family: Cursive;
+		color: #ffff66;
+	}
+	#logo {
+		position: absolute;
+		left: -100px;
+		height: 100%;
+		width: 400px;
+	}
+	#ricerca {
+		position: absolute;
+		top: 80px;
+		left: 370px;
+	}
+	#inputSearch {
+		width: 300px;
+		font-size: 1.5em;
+	}
+	#BSearch {
+		position: absolute;
+		width: 100px;
+		height: 34px;
+		font-size: 1.2em;
+		color: #ffff66;
+		border-radius: 30px;
+		border: 1px solid #ffff66;
+		background-color: #000c4b;
+		margin-left: 5px;	
+	}
+	#login {
+		position: relative;
+		top: 130px;
+		left: 200px;
+		line-height: 3;
+	}
+	span.divBlock {
+		position: relative;
+	}
+	#f1, #f2, #f3 {
+		position: absolute;
+	}
+	#f1 {
+		left: 50px;
+	}
+	#f2 {
+		left: 260px;
+	}
+	#f3 {
+		left: 470px;
+	}
+	
+	#b1,#b2,#b3,#b4,#b5,#b6{position: absolute;}
+	
+	#b1{top: 420px;left: 50px}
+	#b2{top: 420px;left: 150px}
+	#b3{top: 420px;left: 260px}
+	#b4{top: 420px;left: 360px}
+	#b5{top: 420px;left: 480px}
+	#b6{top: 420px;left: 580px}
+	
+	.LR { LR la parte di login/ registrazione/ carrello
+		padding: 10px;
+		width: 150px;
+		font-size: 20px;
+	}
+	.D per dopo, .C carrello pref, .LD dislike, .L like
+	.D, .C, .LD, .L, .LR {
+		background-color: #000c4b;
+		border: 1px solid white;
+		color: #ffff66;
+		border: 1px solid #ffff66;
+		border-radius: 30px;
+	}
+	.D, .C, .LD, .L {
+		padding: 10px;
+		width: 90px;
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	.L:hover {
+		background-color: green;
+		color: white;
+	}
+	.LD:hover {
+		background-color: red;
+		color: white;
+	}
+	.C:hover {
+		background-color: #947141;
+		color: white;
+	}
+	.D:hover {
+		background-color: #800040;
+		color: white;
+	}
+	div#navmenuaside {
+		position: relative;
+	}
+	#AsidePreferiti {
+		position: absolute;
+		width: 220px;
+		left: 10px;
+		top: 60px;
+		background-color: #001998;
+		border-radius: 50px;
+	}
+	#AsideConsigliati {
+		position: absolute;
+		width: 730px;
+		height: 500px; left : 250px;
+		top: 1220px;
+		background-color: #001998;
+		border-radius: 50px;
+		left: 250px;
+	}
+	#navnav {
+		position: absolute;
+		left: 485px;
+		top: -20px;
+	}
+	ul.nav li {
+		display: inline;
+		float: left;
+	}
+	ul.nav li a {
+		display: block;
+		text-align: center;
+		padding: 10px;
+		margin: 1px;
+		max-width: 200px;
+		color: #ff0000;
+	}
+	ul#undernav {
+		display: none;
+	}
+	
+	#offerte{
+		font-size: 1.5em;
+	}
+	#Principale {
+		position: absolute;
+		width: 800px;
+		left: 200px;
+		top: 75px;
+	}
+	article a{
+	color: #77e052;
+	}
+	.title{
+		font-size: 30px;
+		position: relative;
+		top: -165px;
+		left: 150px;
+	}
+	.foto{
+		position: relative;
+		top: 50px;
+		left: -220px;	
+	}
+	
+	.infoGioco{
+		position: relative;
+		top: -140px;
+		left: 440px;
+		text-align: left;
+		font-size: 25px;
+		width:300px;
+	}
+	.descriptionGame{
+		width:600px;
+		height: 4em;
+		position: relative;
+		top: -10px;
+		left: 60px;
+		font-size: 20px;
+		text-align: left;
+		overflow: hidden;
+	}
+	 footer, aside {
+		font-size: 2em;
+	}
+	#foot{
+		border: 3px dotted #ffff66;
+		border-radius: 30px;
+		padding: 20px;
+		margin-right: auto;
+		font-size: 20px;
+	}
+} */
+
+@media screen and (min-width:1000px) {
+	body {
+		background-color: #000c4b;
+		color: #ffffff;
+		text-align: center;
+		width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#acc_manage{
+	
+    width: fit-content;
+	}
+	
+	input#username{		/* tasto nella pagina di login */
+		margin:1%;
+	}
+	input#password{		/* tasto nella pagina di login */
+		margin:1%;
+	}
+	table#acc{			 /* tabella con i dati del acc */
+	
+	width:40%;
+	margin: auto;
+	margin-top:1%;
+}
+	table, th, td {			/* tutte le tabelle */
+	
+	margin-top:1%; 		
+}
+	#ContenutoCartTable{
+	    width: 90%;
+    margin-left: 5%;
+	}
+	.foto {
+		width: 90%;
+    	height: 30rem;
+	}
+	.miniFoto {
+		width: 250px;
+	}
+	.fotoFooterPrefCons {
+		width: 200px;
+		height: 300px;
+	}
+	a {
+		text-decoration: none;
+		color: rgb(255, 128, 64);
+		font-size: 1.5em;
+	}
+	#headerL {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		height: 200px;
+	}
+	#textLogo {
+		position: absolute;
+		top: 25px;
+		left: 370px;
+		font-size: 2em;
+		font-family: Cursive;
+		color: #ffff66;
+	}
+	#logo {
+		position: absolute;
+		left: -100px;
+		height: 100%;
+		width: 400px;
+	}
+	#ricerca {
+		position: absolute;
+		top: 80px;
+		left: 370px;
+	}
+	#inputSearch {
+	visibility: hidden;
+		width: 500px;
+		font-size: 1.5em;
+	}
+	#BSearch {
+	visibility: hidden;
+		position: absolute;
+		width: 100px;
+		height: 34px;
+		font-size: 1.2em;
+		color: #ffff66;
+		background-color: #000c4b;
+		border: 2px solid #ffff66;
+		border-radius: 30px;
+		margin-left: 5px;
+	}
+	#login {
+		position: absolute;
+		top: 130px;
+		left: 370px;
+		line-height: 3;
+	}
+	.LR { /* LR la parte di login/ registrazione/ carrello */
+		padding: 10px;
+		width: 150px;
+		font-size: 20px;
+	}
+	/* .D per dopo, .C carrello pref, .LD dislike, .L like */
+	.D, .C, .LD, .L, .LR {
+		background-color: #000c4b;
+		border: 1px solid white;
+		color: #ffff66;
+		border: 1px solid #ffff66;
+		border-radius: 30px;
+	}
+	.D, .C, .LD, .L {
+		padding: 10px;
+		width: 90px;
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	.L:hover {
+		background-color: green;
+		color: white;
+	}
+	.LD:hover {
+		background-color: red;
+		color: white;
+	}
+	.C:hover {
+		background-color: #947141;
+		color: white;
+	}
+	.D:hover {
+		background-color: #800040;
+		color: white;
+	}
+	div#navmenuaside {
+		position: relative;
+	}
+	#AsidePreferiti {
+		position: absolute;
+		width: 220px;
+		left: 10px;
+		top: 60px;
+		background-color: #001998;
+		border-radius: 50px;
+	}
+	#AsideConsigliati {
+		position: absolute;
+		width: 220px;
+		left: 1070px;
+		top: 60px;
+		background-color: #001998;
+		border-radius: 50px;
+	}
+	#navnav {
+		position: absolute;
+		left: 485px;
+	}
+	ul.nav li {
+		display: inline;
+		float: left;
+	}
+	ul.nav li a {
+		display: block;
+		text-align: center;
+		padding: 10px;
+		margin: 1px;
+		max-width: 200px;
+		color: #ff0000;
+	}
+	ul#undernav {
+		display: none;
+	}
+	#Principale {
+		position: absolute;
+		width: 800px;
+		left: 250px;
+		top: 75px;
+	}
+	article a{
+	color: #77e052;
+	}
+	.title{
+	max-height: 2.5em;
+    overflow: hidden;
+		font-size: 2em;
+	}
+	#sideBar{
+	    width: 35%;
+    	height: 50rem;
+    	float: left;
+	}
+	#main{
+	float: left;
+    width: 64%;
+	}
+	.container{
+	border: 2px solid white;
+  border-radius: 12px;
+  padding: 5px;
+		margin: 1%;
+    overflow: hidden;
+	}
+	.img{
+		float: left;
+    width: 60%;
+	}
+	.descriptionGame{
+		font-size: 1.5em;
+	}
+	.descriptionGameInfo{
+		    float: left;
+    width: 40%;
+    overflow: hidden;
+    height: 11.5em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.cart{
+	width: 25%;
+}
+.deleteX{
+	    color: red;
+}
+#CartTable{
+	width:90%;
+	margin-left: 5%;
+}
+.Quantita{
+	text-align: center;
+    width: 30%;
+}
+}/*Finish media over 1300px   */
+
+
+	section#Principale, article, footer, aside {
+		clear: left;
+		padding-top: 10px;
+		font-size: 2em;
+	}
+	#foot{
+		border: 3px dotted #ffff66;
+		border-radius: 30px;
+		position: relative;
+		padding: 20px;
+		margin-right: auto;
+		
+		font-size: 20px;
+	}

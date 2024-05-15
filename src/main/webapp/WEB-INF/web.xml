@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<welcome-file-list>
+   <welcome-file>home.jsp</welcome-file>
+</welcome-file-list>
+	<filter>
+		<filter-name>FiltroAcquistiNoLogin</filter-name>
+		<filter-class>Controller/BuyLogFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FiltroAcquistiNoLogin</filter-name>
+    <url-pattern>/Paga/*</url-pattern>
+	</filter-mapping>
+
+  	<filter>
+		<filter-name>AdminPageFilter</filter-name>
+		<filter-class>Controller/AdminPageFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AdminPageFilter</filter-name>
+    <url-pattern>/AccountManage/*</url-pattern>
+    <url-pattern>/GameManage/*</url-pattern>
+    
+    
+	
+	</filter-mapping>
+	  
+  	
+	
+	<servlet>
+    <servlet-name>UploadGame</servlet-name>
+    <servlet-class>Controller/UploadGame</servlet-class>
+	<init-param>
+		<param-name>file-upload</param-name>
+		<param-value>img</param-value>
+	</init-param>
+	<multipart-config>
+		<max-file-size>52428800</max-file-size>
+		<max-request-size>52428800</max-request-size>
+		<file-size-threshold>0</file-size-threshold>
+	</multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadGame</servlet-name>
+    <url-pattern>/UploadGame</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>gameList</servlet-name>
+    <servlet-class>Controller/gameList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gameList</servlet-name>
+    <url-pattern>/jsp/gameList</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Controller/Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/LoginPage</url-pattern>
+    <url-pattern>/jsp/Login</url-pattern>
+    <url-pattern>/jsp/LoginPage</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Checklogin</servlet-name>
+    <servlet-class>Controller/Checklogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Checklogin</servlet-name>
+    <url-pattern>/jsp/Checklogin</url-pattern>
+  </servlet-mapping>
+  
+
+</web-app>

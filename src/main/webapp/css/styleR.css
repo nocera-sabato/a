@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@media only screen and (max-width: 1000px) {
+body{
+	width: 90%;
+	margin-left: 4%;
+}
+.formInput{
+	display: block;
+	width: 90%;
+	margin-left: 4%;
+	margin-bottom: 1%;
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 50px;
+}
+.button1{
+	font-size: 1.5em;
+	display: inline;
+	width: 25%;
+	margin-left: 15%;
+	margin-top: 2%;
+}
+}
+
+@media only screen and (min-width: 1001px) {
+body{
+	width: 90%;
+	margin-left: 4%;
+	
+}
+.formInput{
+	display: inline;
+	width: 48%;
+	margin-bottom: 1%;
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 50px;
+}
+.button1{
+	font-size: 1.5em;
+	display: inline;
+	width: 25%;
+	margin-left: 15%;
+	margin-top: 2%;
+}
+}
+legend{
+	text-align: center;
+}
